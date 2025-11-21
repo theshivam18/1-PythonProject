@@ -1,0 +1,142 @@
+<!-- 🟢 1. Basic Git Setup
+git config --global user.name "Your Name"
+git config --global user.email "you@gmail.com"
+
+🟡 2. Create & Initialize Repo
+git init
+
+
+Naya local git repo banane ke liye.
+
+🟡 3. Connect to GitHub Repo
+git remote add origin <repo-url>
+
+
+Remote check karne ke liye:
+
+git remote -v
+
+🟢 4. Check Status
+git status
+
+🟢 5. Add Files
+
+Sab add karne ke liye:
+
+git add .
+
+
+Specific file:
+
+git add filename.txt
+
+
+Folder:
+
+git add foldername/
+
+🔵 6. Commit Commands
+git commit -m "your message"
+
+
+Agar mistake ho jaye:
+
+git commit --amend
+
+🔵 7. Push to GitHub
+git push origin main
+
+
+Kabhi-kabhi branch master hoti hai:
+
+git push origin master
+
+🔵 8. Pull from GitHub (get latest updates)
+git pull
+
+🟣 9. Clone Repo
+git clone <repo-url>
+
+🟣 10. Branch System
+
+Naya branch:
+
+git branch feature-1
+
+
+Switch:
+
+git checkout feature-1
+
+
+Ek line me create + switch:
+
+git checkout -b feature-1
+
+
+Branch list:
+
+git branch
+
+🔴 11. Merge Branch
+
+Main branch me merge karne ke liye:
+
+git checkout main
+git merge feature-1
+
+🔴 12. Delete Branch
+
+Local:
+
+git branch -d feature-1
+
+
+Force:
+
+git branch -D feature-1
+
+
+Remote:
+
+git push origin --delete feature-1
+
+🟤 13. See Commit History
+git log
+
+
+Short version:
+
+git log --oneline
+
+⚫ 14. Undo Changes (Very Important)
+File ko last commit jaisa banane ke liye:
+git checkout -- filename.txt
+
+Staged changes remove:
+git reset filename.txt
+
+Commit undo (safe):
+git reset --soft HEAD~1
+
+Commit + changes dono undo:
+git reset --hard HEAD~1
+
+🟤 15. Stash (Temporary Save)
+git stash
+git stash apply
+git stash pop
+
+🟤 16. See Difference
+git diff
+
+🔵 17. Rename File
+git mv oldname.txt newname.txt
+
+🔵 18. Remove File
+git rm filename.txt
+git commit -m "Removed file"
+git push -->
+
+<!-- Git commands like git status, git add, git mv, etc. only work inside a Git repo folder—where the .git directory exists.
+If you try to run them outside a Git repo, you'll get an error saying "not a git repository". -->
